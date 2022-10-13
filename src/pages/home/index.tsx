@@ -1,3 +1,7 @@
+import { ItemList } from '../../components/ItemList'
+
 export const PageHome = function() {
-  return <div>home</div>
+  return <div>
+    <ItemList />
+  </div>
 }
