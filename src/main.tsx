@@ -1,12 +1,18 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { PageHome } from './pages/home/'
+import { PageItem } from './pages/item/'
 import './index.css'
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <div>Hello world!</div>,
+    element: <PageHome />,
+  },
+  {
+    path: '/item/',
+    element: <PageItem />,
   },
 ])
 
