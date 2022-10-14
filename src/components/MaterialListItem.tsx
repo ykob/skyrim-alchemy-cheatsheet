@@ -1,5 +1,6 @@
 import { effects as dataEffects, materials as dataMaterials } from '../data'
 import { EffectItem } from './EffectItem'
+import { MaterialListLabel } from './MaterialListLabel'
 
 type Props = {
   label: string
@@ -19,8 +20,8 @@ export const MaterialListItem = function (props: Props) {
   })
 
   return (
-    <div className="grid grid-cols-4 gap-8 items-center">
-      <div>{props.label}</div>
+    <div className="grid grid-cols-4 gap-4 items-center">
+      <MaterialListLabel label={props.label} />
       <div className="grid grid-cols-4 col-span-3 gap-2">{effectLabels}</div>
     </div>
   )
