@@ -1,24 +1,30 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import App from './App'
 import { PageHome } from './pages/home/'
 import { PageItem } from './pages/item/'
 import './index.css'
 
 const router = createBrowserRouter([
   {
+    element: <App />,
     path: '/',
-    element: <PageHome />,
-  },
-  {
-    path: '/item/',
-    element: <PageItem />,
-  },
+    children: [
+      {
+        index: true,
+        element: <PageHome />,
+      },
+      {
+        path: 'item',
+        element: <PageItem />,
+      },
+    ]
+  }
 ])
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
-    <h1>Skyrim Archemy Cheatsheet</h1>
     <RouterProvider router={router} />
   </React.StrictMode>
 )
