@@ -1,7 +1,7 @@
-import { ItemList } from '../../components/ItemList'
+import { MaterialList } from '../../components/MaterialList'
 
 export const PageHome = function() {
   return <div>
-    <ItemList />
+    <MaterialList />
   </div>
 }

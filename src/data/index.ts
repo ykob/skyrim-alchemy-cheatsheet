@@ -56,7 +56,7 @@ export const effects = [
   { id: 54, name: '雷撃耐性ダウン' },
 ]
 
-export const items = [
+export const materials = [
   { id: 0, name: 'アビシアン・ロングフィン', effects: [51, 25, 53, 23] },
   { id: 1, name: 'イワムシクイの卵', effects: [45, 21, 4, 52] },
   { id: 2, name: 'ウィスプ・ラッピング', effects: [47, 12, 10, 42] },
@@ -151,5 +151,5 @@ export const items = [
 
 export default {
   effects,
-  items,
+  materials,
 }
