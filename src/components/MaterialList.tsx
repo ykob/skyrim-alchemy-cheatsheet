@@ -1,4 +1,5 @@
 import { effects as dataEffects, materials as dataMaterials } from '../data'
+import { MaterialListItem } from './MaterialListItem'
 
 export const MaterialList = function () {
   const materialItems = dataMaterials.map((o) => {
@@ -7,9 +8,10 @@ export const MaterialList = function () {
       const label = dataEffects.find((q) => q.id === p)
 
       return (
-        <div key={`material-list-item-effect-${id}-${p}`}>
-          {label ? label.name : 'undefined'}
-        </div>
+        <MaterialListItem
+          key={`material-list-item-effect-${id}-${p}`}
+          label={label ? label.name : 'undefined'}
+        />
       )
     })
 
