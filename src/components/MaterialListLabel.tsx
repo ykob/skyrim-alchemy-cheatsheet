@@ -4,7 +4,7 @@ type Props = {
 
 export const MaterialListLabel = function (props: Props) {
   return (
-    <div className="flex justify-center items-center cursor-pointer px-2 h-12 rounded bg-slate-500 text-white">
+    <div className="flex justify-center items-center cursor-pointer h-12 rounded ">
       {props.label}
     </div>
   )

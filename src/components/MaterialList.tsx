@@ -1,15 +1,16 @@
-import { materials as dataMaterials } from '../data'
+import { categories, materials as dataMaterials } from '../data'
 import { MaterialListItem } from './MaterialListItem'
 
 export const MaterialList = function () {
   const materialItems = dataMaterials.map((o) => {
-    const { id, name, effectIds } = o
+    const { id, name, effectIds, category } = o
 
     return (
       <MaterialListItem
         key={`material-list-item-${id}`}
         label={name}
         effectIds={effectIds}
+        categoryId={category}
       />
     )
   })
