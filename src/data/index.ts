@@ -1,7 +1,7 @@
 export const categories = [
   {
     id: 0,
-    name: null,
+    name: 'Vanilla',
   },
   {
     id: 1,
