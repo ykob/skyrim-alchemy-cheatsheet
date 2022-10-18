@@ -27,11 +27,12 @@ export const CategoryItem = function (props: Props) {
     'flex',
     'items-center',
     'justify-center',
+    'shrink-0',
     'rounded',
-    'w-28',
-    'h-6',
+    'w-24',
+    'h-5',
     'text-white',
-    'text-sm',
+    'text-xs',
   ].join(' ')
   const label = category ? category.name : 'undefined'
 

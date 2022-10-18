@@ -14,5 +14,5 @@ export const MaterialList = function () {
       />
     )
   })
-  return <div className='grid grid-cols-1 gap-6'>{materialItems}</div>
+  return <div className='grid grid-cols-1 gap-4'>{materialItems}</div>
 }

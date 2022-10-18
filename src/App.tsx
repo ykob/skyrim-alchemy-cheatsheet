@@ -4,7 +4,7 @@ function App() {
   return (
     <div>
       <h1 className="text-2xl">Skyrim Archemy Cheatsheet</h1>
-      <div className="px-8 py-12">
+      <div className="px-4 py-12 lg:px-8">
         <Outlet />
       </div>
     </div>
