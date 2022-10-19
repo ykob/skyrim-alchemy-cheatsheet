@@ -1,7 +1,6 @@
 import { effects as dataEffects } from '../data'
-import { CategoryItem } from './CategoryItem'
 import { EffectItem } from './EffectItem'
-import { MaterialListItemLabel } from './MaterialListItemLabel'
+import { MaterialListItemHead } from './MaterialListItemHead'
 
 type Props = {
   label: string
@@ -24,11 +23,10 @@ export const MaterialListItem = function (props: Props) {
 
   return (
     <div className="grid grid-cols-[3fr_7fr] gap-2 items-stretch">
-      <div className="flex flex-col justify-center items-end gap-2 cursor-pointer h-20 px-2 md:h-12 lg:flex-row lg:justify-end lg:items-center lg:gap-4 lg:h-10">
-        <MaterialListItemLabel label={props.label} />
-        <CategoryItem categoryId={props.categoryId} />
+      <MaterialListItemHead label={props.label} categoryId={props.categoryId} />
+      <div className="grid grid-cols-2 gap-1 md:grid-cols-4 lg:gap-2">
+        {effectLabels}
       </div>
-      <div className="grid grid-cols-2 gap-1 md:grid-cols-4 lg:gap-2">{effectLabels}</div>
     </div>
   )
 }
