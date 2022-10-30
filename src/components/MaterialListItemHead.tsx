@@ -1,3 +1,4 @@
+import { BoxButton } from './BoxButton'
 import { CategoryItem } from './CategoryItem'
 import { MaterialListItemLabel } from './MaterialListItemLabel'
 
@@ -13,12 +14,9 @@ export const MaterialListItemHead = function (props: Props) {
     'justify-center',
     'items-end',
     'gap-2',
-    'cursor-pointer',
-    'rounded',
     'h-20',
     'px-2',
     'md:h-16',
-    'bg-white',
     'lg:flex-row',
     'lg:justify-end',
     'lg:items-center',
@@ -27,9 +25,9 @@ export const MaterialListItemHead = function (props: Props) {
   ].join(' ')
 
   return (
-    <div className={classnames}>
+    <BoxButton classnames={classnames}>
       <MaterialListItemLabel label={props.label} />
       <CategoryItem categoryId={props.categoryId} />
-    </div>
+    </BoxButton>
   )
 }
