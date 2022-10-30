@@ -14,14 +14,16 @@ export const MaterialListItemHead = function (props: Props) {
     'items-end',
     'gap-2',
     'cursor-pointer',
+    'rounded',
     'h-20',
     'px-2',
-    'md:h-12',
+    'md:h-16',
+    'bg-white',
     'lg:flex-row',
     'lg:justify-end',
     'lg:items-center',
     'lg:gap-4',
-    'lg:h-10',
+    'lg:px-4',
   ].join(' ')
 
   return (

@@ -13,7 +13,8 @@ export const EffectItem = function (props: Props) {
     'px-2',
     'rounded',
     'leading-4',
-    'bg-slate-200',
+    'bg-white',
+    'drop-shadow-sm',
   ].join(' ')
 
   return <div className={classnames}>{props.label}</div>
