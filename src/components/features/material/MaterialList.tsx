@@ -9,6 +9,7 @@ export const MaterialList = function () {
       <MaterialListItem
         key={`material-list-item-${id}`}
         label={name}
+        itemId={id}
         effectIds={effectIds}
         categoryId={category}
       />

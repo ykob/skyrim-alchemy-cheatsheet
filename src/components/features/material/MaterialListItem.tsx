@@ -1,11 +1,13 @@
+import { Link } from 'react-router-dom'
 import { effects as dataEffects } from '../../../data'
 import { EffectItem } from '../effect/EffectItem'
 import { MaterialListItemHead } from './MaterialListItemHead'
 
 type Props = {
-  label: string
-  effectIds: number[]
   categoryId: number
+  effectIds: number[]
+  itemId: number
+  label: string
 }
 
 export const MaterialListItem = function (props: Props) {
@@ -22,11 +24,14 @@ export const MaterialListItem = function (props: Props) {
   })
 
   return (
-    <div className="grid grid-cols-[3fr_7fr] gap-2 items-stretch">
+    <Link
+      to={`/item/${props.itemId}`}
+      className="grid grid-cols-[3fr_7fr] gap-2 items-stretch"
+    >
       <MaterialListItemHead label={props.label} categoryId={props.categoryId} />
       <div className="grid grid-cols-2 gap-1 md:grid-cols-4 lg:gap-2">
         {effectLabels}
       </div>
-    </div>
+    </Link>
   )
 }
