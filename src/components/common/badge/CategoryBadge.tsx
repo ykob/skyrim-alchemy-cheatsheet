@@ -1,4 +1,4 @@
-import { categories as dataCategories } from '../data'
+import { categories as dataCategories } from '../../../data'
 
 type Props = {
   categoryId: number

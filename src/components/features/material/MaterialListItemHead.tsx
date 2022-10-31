@@ -1,5 +1,5 @@
-import { BoxButton } from './BoxButton'
-import { CategoryItem } from './CategoryItem'
+import { BoxButton } from '../../common/button/BoxButton'
+import { CategoryItem } from '../../common/badge/CategoryBadge'
 import { MaterialListItemLabel } from './MaterialListItemLabel'
 
 type Props = {

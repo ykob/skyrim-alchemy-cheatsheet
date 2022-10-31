@@ -1,4 +1,4 @@
-import { categories, materials as dataMaterials } from '../data'
+import { categories, materials as dataMaterials } from '../../../data'
 import { MaterialListItem } from './MaterialListItem'
 
 export const MaterialList = function () {

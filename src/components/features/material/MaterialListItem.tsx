@@ -1,5 +1,5 @@
-import { effects as dataEffects } from '../data'
-import { EffectItem } from './EffectItem'
+import { effects as dataEffects } from '../../../data'
+import { EffectItem } from '../effect/EffectItem'
 import { MaterialListItemHead } from './MaterialListItemHead'
 
 type Props = {
