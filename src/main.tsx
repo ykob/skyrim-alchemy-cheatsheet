@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import App from './App'
 import { PageHome } from './pages/home/'
-import { PageItem } from './pages/item/'
+import { PageItem } from './pages/item'
 import './index.css'
 
 const router = createBrowserRouter([
@@ -16,7 +16,7 @@ const router = createBrowserRouter([
         element: <PageHome />,
       },
       {
-        path: 'item',
+        path: 'item/:id',
         element: <PageItem />,
       },
     ]
