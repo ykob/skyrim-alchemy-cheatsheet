@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
-import { BoxButton } from '../../ui-parts/button/BoxButton'
-import { CategoryItem } from '../../ui-parts/badge/CategoryBadge'
+import { BoxButton } from '../../ui-parts/BoxButton'
+import { CategoryItem } from '../../ui-parts/CategoryBadge'
 import { MaterialListItemLabel } from './MaterialListItemLabel'
 
 type Props = {

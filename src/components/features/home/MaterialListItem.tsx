@@ -1,5 +1,5 @@
 import { effects as dataEffects } from '../../../data'
-import { EffectItem } from '../effect/EffectItem'
+import { EffectItem } from '../../ui-parts/EffectItem'
 import { MaterialListItemHead } from './MaterialListItemHead'
 
 type Props = {
