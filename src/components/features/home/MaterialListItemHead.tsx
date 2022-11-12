@@ -28,7 +28,7 @@ export const MaterialListItemHead = function (props: Props) {
 
   return (
     <Link
-      to={`/item/${props.itemId}`}
+      to={`/material/${props.itemId}`}
     >
       <BoxButton classnames={classnames}>
         <MaterialListItemLabel label={props.label} />
