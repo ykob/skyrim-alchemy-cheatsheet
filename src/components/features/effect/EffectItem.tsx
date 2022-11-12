@@ -1,4 +1,4 @@
-import { BoxButton } from '../../common/button/BoxButton'
+import { BoxButton } from '../../ui-parts/button/BoxButton'
 
 type Props = {
   label: string
