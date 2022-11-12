@@ -1,10 +1,12 @@
+import { Link } from 'react-router-dom'
 import { BoxButton } from '../../ui-parts/button/BoxButton'
 import { CategoryItem } from '../../ui-parts/badge/CategoryBadge'
 import { MaterialListItemLabel } from './MaterialListItemLabel'
 
 type Props = {
-  label: string
   categoryId: number
+  itemId: number
+  label: string,
 }
 
 export const MaterialListItemHead = function (props: Props) {
@@ -25,9 +27,13 @@ export const MaterialListItemHead = function (props: Props) {
   ].join(' ')
 
   return (
-    <BoxButton classnames={classnames}>
-      <MaterialListItemLabel label={props.label} />
-      <CategoryItem categoryId={props.categoryId} />
-    </BoxButton>
+    <Link
+      to={`/item/${props.itemId}`}
+    >
+      <BoxButton classnames={classnames}>
+        <MaterialListItemLabel label={props.label} />
+        <CategoryItem categoryId={props.categoryId} />
+      </BoxButton>
+    </Link>
   )
 }
