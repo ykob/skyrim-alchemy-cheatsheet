@@ -20,7 +20,7 @@ const categoryClassnames = (categoryId: number): string => {
   }
 }
 
-export const CategoryItem = function (props: Props) {
+export const CategoryBadge = function (props: Props) {
   const category = dataCategories.find((o) => o.id === props.categoryId)
   const classnames = [
     categoryClassnames(props.categoryId),

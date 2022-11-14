@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { BoxButton } from '../../ui-parts/BoxButton'
-import { CategoryItem } from '../../ui-parts/CategoryBadge'
+import { CategoryBadge } from '../../ui-parts/CategoryBadge'
 import { MaterialListItemLabel } from './MaterialListItemLabel'
 
 type Props = {
@@ -32,7 +32,7 @@ export const MaterialListItemHead = function (props: Props) {
     >
       <BoxButton classnames={classnames}>
         <MaterialListItemLabel label={props.label} />
-        <CategoryItem categoryId={props.categoryId} />
+        <CategoryBadge categoryId={props.categoryId} />
       </BoxButton>
     </Link>
   )
