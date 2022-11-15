@@ -1,6 +1,6 @@
 import { useParams } from 'react-router-dom'
 import { materials as dataMaterials } from '../../data'
-import { MaterialContent } from '../../components/features/material/MaterialContent'
+import { MaterialContent } from '../../components/features/material-content/MaterialContent'
 
 export const PageMaterial = function () {
   const { id } = useParams()

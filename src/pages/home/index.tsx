@@ -1,4 +1,4 @@
-import { MaterialList } from '../../components/features/home/MaterialList'
+import { MaterialList } from '../../components/features/material-list/MaterialList'
 
 export const PageHome = function() {
   return <div>

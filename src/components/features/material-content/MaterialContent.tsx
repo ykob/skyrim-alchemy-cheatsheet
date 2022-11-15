@@ -1,4 +1,4 @@
-import { CategoryBadge } from '../../ui-parts/'
+import { CategoryBadge } from '../../ui-parts'
 
 type Props = {
   name: string
