@@ -1,3 +1,5 @@
+import { Material } from '../models'
+
 export const categories = [
   {
     id: 0,
@@ -79,7 +81,7 @@ export const effects = [
   { id: 54, name: '雷撃耐性ダウン' },
 ]
 
-export const materials = [
+export const materials: Material[] = [
   {
     id: 0,
     name: 'アビシアン・ロングフィン',
