@@ -1,8 +1,12 @@
-import { materials as dataMaterials } from '../../../data'
+import { Material } from '../../../models'
 import { MaterialListItem } from './MaterialListItem'
 
-export const MaterialList = function () {
-  const materialItems = dataMaterials.map((o) => {
+type Props = {
+  materials: Material[]
+}
+
+export const MaterialList = function (props: Props) {
+  const materialItems = props.materials.map((o) => {
     const { id, name, effectIds, category } = o
 
     return (
