@@ -14,8 +14,12 @@ export const PageMaterial = function () {
     return <div>This material is not found.</div>
   }
 
+  const thisMaterial = dataMaterials.find((o) => o.id === data.id)
   const materials = dataMaterials.filter((o) => {
-    return o.effectIds.filter((p) => data.effectIds.indexOf(p) > -1).length > 0
+    return (
+      o.effectIds.filter((p) => data.effectIds.indexOf(p) > -1).length > 0 &&
+      o.id !== data.id
+    )
   })
 
   return (
@@ -26,7 +30,7 @@ export const PageMaterial = function () {
         effectIds={data.effectIds}
         category={data.category}
       />
-      <MaterialList materials={materials} />
+      <MaterialList materials={[thisMaterial!, ...materials]} />
     </>
   )
 }
