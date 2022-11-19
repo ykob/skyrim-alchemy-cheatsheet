@@ -16,5 +16,6 @@ export const BoxButton = function (props: Props) {
     'active:bg-emerald-300',
     'hover:bg-emerald-200',
   ].join(' ')
+
   return <div className={classnames}>{props.children}</div>
 }
