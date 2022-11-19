@@ -2,6 +2,7 @@ import { useParams } from 'react-router-dom'
 import { materials as dataMaterials } from '../../data'
 import { MaterialContent } from '../../components/features/material-content/MaterialContent'
 import { MaterialList } from '../../components/features/material-list/MaterialList'
+import { StickyBar } from '../../components/ui-parts'
 
 export const PageMaterial = function () {
   const { id } = useParams()
@@ -25,12 +26,17 @@ export const PageMaterial = function () {
   return (
     <>
       <MaterialContent
-        className="mb-8"
+        className="mb-8 px-4 lg:px-8"
         name={data.name}
         effectIds={data.effectIds}
         category={data.category}
       />
-      <MaterialList materials={[thisMaterial!, ...materials]} />
+      <StickyBar className="mb-4">
+        <MaterialList materials={[thisMaterial!]} />
+      </StickyBar>
+      <div className="px-4 lg:px-8">
+        <MaterialList materials={materials} />
+      </div>
     </>
   )
 }
