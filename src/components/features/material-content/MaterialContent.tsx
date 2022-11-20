@@ -2,7 +2,6 @@ import { CategoryBadge } from '../../ui-parts'
 
 type Props = {
   name: string
-  effectIds: number[]
   category: number
   className: string
 }

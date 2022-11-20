@@ -28,7 +28,6 @@ export const PageMaterial = function () {
       <MaterialContent
         className="mb-8 px-4 lg:px-8"
         name={data.name}
-        effectIds={data.effectIds}
         category={data.category}
       />
       <StickyBar className="mb-4">
