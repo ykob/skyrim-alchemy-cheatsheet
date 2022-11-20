@@ -31,10 +31,13 @@ export const PageMaterial = function () {
         category={data.category}
       />
       <StickyBar className="mb-4">
-        <MaterialList materials={[thisMaterial!]} />
+        <MaterialList
+          materials={[thisMaterial!]}
+          parentEffectIds={data.effectIds}
+        />
       </StickyBar>
       <div className="px-4 lg:px-8">
-        <MaterialList materials={materials} />
+        <MaterialList materials={materials} parentEffectIds={data.effectIds} />
       </div>
     </>
   )

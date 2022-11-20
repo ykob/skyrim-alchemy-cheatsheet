@@ -7,17 +7,22 @@ type Props = {
   effectIds: number[]
   itemId: number
   label: string
+  parentEffectIds?: number[]
 }
 
 export const MaterialListItem = function (props: Props) {
   const effectLabels = props.effectIds.map((p) => {
     const label = dataEffects.find((q) => q.id === p)
+    const matchedEffectId = props.parentEffectIds
+      ? props.parentEffectIds.indexOf(p)
+      : undefined
 
     return (
       <EffectItem
         key={`material-list-item-effect-${p}`}
         label={label ? label.name : 'undefined'}
         classnames="leading-4 text-xs lg:text-sm"
+        matchedEffectId={matchedEffectId}
       />
     )
   })

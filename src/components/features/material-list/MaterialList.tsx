@@ -3,6 +3,7 @@ import { MaterialListItem } from './MaterialListItem'
 
 type Props = {
   materials: Material[]
+  parentEffectIds?: number[]
 }
 
 export const MaterialList = function (props: Props) {
@@ -16,8 +17,9 @@ export const MaterialList = function (props: Props) {
         itemId={id}
         effectIds={effectIds}
         categoryId={category}
+        parentEffectIds={props.parentEffectIds}
       />
     )
   })
-  return <div className='grid grid-cols-1 gap-4'>{materialItems}</div>
+  return <div className="grid grid-cols-1 gap-4">{materialItems}</div>
 }

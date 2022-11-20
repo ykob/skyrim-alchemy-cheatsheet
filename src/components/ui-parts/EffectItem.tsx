@@ -3,6 +3,7 @@ import { BoxButton } from './'
 type Props = {
   label: string
   classnames?: string
+  matchedEffectId?: number
 }
 
 export const EffectItem = function (props: Props) {
