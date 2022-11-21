@@ -13,9 +13,10 @@ export const StickyBar = function (props: Props) {
     'left-0',
     'bg-slate-600',
     'px-4',
-    'py-4',
+    'py-2',
     'z-10',
     'lg:px-8',
+    'lg:py-3',
   ].join(' ')
 
   return <div className={classnames}>{props.children}</div>

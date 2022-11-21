@@ -30,7 +30,7 @@ export const PageMaterial = function () {
         name={data.name}
         category={data.category}
       />
-      <StickyBar className="mb-4">
+      <StickyBar className="mb-2 lg:mb-3">
         <MaterialList
           materials={[thisMaterial!]}
           parentEffectIds={data.effectIds}

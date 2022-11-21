@@ -21,5 +21,5 @@ export const MaterialList = function (props: Props) {
       />
     )
   })
-  return <div className="grid grid-cols-1 gap-4">{materialItems}</div>
+  return <div className="grid grid-cols-1 gap-2 lg:gap-3">{materialItems}</div>
 }
