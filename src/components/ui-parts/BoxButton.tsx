@@ -13,8 +13,8 @@ export const BoxButton = function (props: Props) {
     'bg-white',
     'drop-shadow-sm',
     'transition-colors',
-    'active:bg-emerald-300',
-    'hover:bg-emerald-200',
+    'active:bg-emerald-400',
+    'hover:bg-emerald-300',
   ].join(' ')
 
   return <div className={classnames}>{props.children}</div>
