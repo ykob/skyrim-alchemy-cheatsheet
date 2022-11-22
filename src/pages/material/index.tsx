@@ -1,7 +1,6 @@
 import { useParams } from 'react-router-dom'
 import { materials as dataMaterials } from '../../data'
-import { MaterialContent } from '../../components/features/material-content/MaterialContent'
-import { MaterialList } from '../../components/features/material-list/MaterialList'
+import { MaterialContent, MaterialList } from '../../components/features'
 import { StickyBar } from '../../components/ui-parts'
 
 export const PageMaterial = function () {
