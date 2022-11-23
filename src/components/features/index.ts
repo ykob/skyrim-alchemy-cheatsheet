@@ -1,2 +1,2 @@
-export { MaterialContent } from './material-content/MaterialContent'
-export { MaterialList } from './material-list/MaterialList'
+export { MaterialContent } from './material-content'
+export { MaterialList } from './material-list'
