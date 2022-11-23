@@ -1,5 +1,5 @@
 import { materials } from '../../data'
-import { MaterialList } from '../../components/features/material-list/MaterialList'
+import { MaterialList } from '../../components/features/material-list'
 
 export const PageHome = function() {
   return <div className='px-4 lg:px-8'>
