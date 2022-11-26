@@ -3,13 +3,14 @@ import { ReactNode } from 'react'
 type Props = {
   children: ReactNode
   className?: string
+  circle?: boolean
 }
 
-export const BoxButton = function (props: Props) {
+export const BoxButton = function ({ circle = false, ...props }: Props) {
   const className = [
     props.className,
     'cursor-pointer',
-    'rounded',
+    circle ? 'rounded-full' : 'rounded',
     'bg-white',
     'drop-shadow-sm',
     'transition-colors',
