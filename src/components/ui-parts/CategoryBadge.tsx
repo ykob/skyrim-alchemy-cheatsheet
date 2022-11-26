@@ -4,7 +4,7 @@ type Props = {
   categoryId: number
 }
 
-const categoryClassnames = (categoryId: number): string => {
+const categoryClassName = (categoryId: number): string => {
   switch (categoryId) {
     case 0:
     default:
@@ -22,8 +22,8 @@ const categoryClassnames = (categoryId: number): string => {
 
 export const CategoryBadge = function (props: Props) {
   const category = dataCategories.find((o) => o.id === props.categoryId)
-  const classnames = [
-    categoryClassnames(props.categoryId),
+  const className = [
+    categoryClassName(props.categoryId),
     'flex',
     'items-center',
     'justify-center',
@@ -36,5 +36,5 @@ export const CategoryBadge = function (props: Props) {
   ].join(' ')
   const label = category ? category.name : 'undefined'
 
-  return <div className={classnames}>{label}</div>
+  return <div className={className}>{label}</div>
 }

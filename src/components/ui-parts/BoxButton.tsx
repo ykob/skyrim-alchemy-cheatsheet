@@ -2,12 +2,12 @@ import { ReactNode } from 'react'
 
 type Props = {
   children: ReactNode
-  classnames?: string
+  className?: string
 }
 
 export const BoxButton = function (props: Props) {
-  const classnames = [
-    props.classnames,
+  const className = [
+    props.className,
     'cursor-pointer',
     'rounded',
     'bg-white',
@@ -17,5 +17,5 @@ export const BoxButton = function (props: Props) {
     'hover:bg-emerald-300',
   ].join(' ')
 
-  return <div className={classnames}>{props.children}</div>
+  return <div className={className}>{props.children}</div>
 }

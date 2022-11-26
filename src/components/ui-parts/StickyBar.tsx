@@ -6,7 +6,7 @@ type Props = {
 }
 
 export const StickyBar = function (props: Props) {
-  const classnames = [
+  const className = [
     props.className,
     'sticky',
     'top-0',
@@ -19,5 +19,5 @@ export const StickyBar = function (props: Props) {
     'lg:py-3',
   ].join(' ')
 
-  return <div className={classnames}>{props.children}</div>
+  return <div className={className}>{props.children}</div>
 }

@@ -9,7 +9,7 @@ type Props = {
 }
 
 export const MaterialListItemHead = function (props: Props) {
-  const classnames = [
+  const className = [
     'flex',
     'flex-col',
     'justify-center',
@@ -29,7 +29,7 @@ export const MaterialListItemHead = function (props: Props) {
     <Link
       to={`/material/${props.itemId}`}
     >
-      <BoxButton classnames={classnames}>
+      <BoxButton className={className}>
         <MaterialListItemLabel label={props.label} />
         <CategoryBadge categoryId={props.categoryId} />
       </BoxButton>

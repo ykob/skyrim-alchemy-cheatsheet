@@ -2,7 +2,7 @@ import { BoxButton } from './'
 
 type Props = {
   label: string
-  classnames?: string
+  className?: string
   matchedEffectId?: number
 }
 
@@ -23,8 +23,8 @@ export const EffectItem = function (props: Props) {
         return 'bg-white'
     }
   }
-  const classnames = [
-    props.classnames,
+  const className = [
+    props.className,
     classnameBgColor(),
     'flex',
     'justify-center',
@@ -32,5 +32,5 @@ export const EffectItem = function (props: Props) {
     'hover:text-black',
   ].join(' ')
 
-  return <BoxButton classnames={classnames}>{props.label}</BoxButton>
+  return <BoxButton className={className}>{props.label}</BoxButton>
 }

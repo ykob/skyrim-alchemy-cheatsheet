@@ -21,7 +21,7 @@ export const MaterialListItem = function (props: Props) {
       <EffectItem
         key={`material-list-item-effect-${p}`}
         label={label ? label.name : 'undefined'}
-        classnames="leading-4 text-xs lg:text-sm"
+        className="leading-4 text-xs lg:text-sm"
         matchedEffectId={matchedEffectId}
       />
     )
