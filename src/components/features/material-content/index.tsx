@@ -9,7 +9,7 @@ type Props = {
 export const MaterialContent = function (props: Props) {
   return (
     <div className={props.className}>
-      <div className="mb-2 text-2xl md:mb-4 md:text-3xl lg:text-4xl">{props.name}</div>
+      <h1 className="mb-2 text-2xl md:mb-4 md:text-3xl lg:text-4xl">素材：{props.name}</h1>
       <CategoryBadge categoryId={props.category} />
     </div>
   )
