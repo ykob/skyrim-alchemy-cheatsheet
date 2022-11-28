@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { effects as dataEffects } from '../../../data'
 import { EffectItem } from '../../ui-parts'
 import { MaterialListItemHead } from './MaterialListItemHead'
@@ -18,12 +19,14 @@ export const MaterialListItem = function (props: Props) {
       : undefined
 
     return (
-      <EffectItem
-        key={`material-list-item-effect-${p}`}
-        label={label ? label.name : 'undefined'}
-        className="leading-4 text-xs lg:text-sm"
-        matchedEffectId={matchedEffectId}
-      />
+      <Link to={`/effect/${p}`}>
+        <EffectItem
+          key={`material-list-item-effect-${p}`}
+          label={label ? label.name : 'undefined'}
+          className="h-full leading-4 text-xs lg:text-sm"
+          matchedEffectId={matchedEffectId}
+        />
+      </Link>
     )
   })
 
