@@ -19,12 +19,12 @@ export const PageEffect = function () {
 
   return (
     <>
-      <EffectContent
-        className="mb-8 px-4 lg:px-8"
-        name={data.name}
-      />
+      <EffectContent className="mb-8 px-4 lg:px-8" name={data.name} />
       <div className="px-4 lg:px-8">
-        <MaterialList materials={materials} />
+        <MaterialList
+          materials={materials}
+          parentEffectIds={[data.id]}
+        />
       </div>
     </>
   )
