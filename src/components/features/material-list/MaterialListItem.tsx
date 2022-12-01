@@ -19,9 +19,8 @@ export const MaterialListItem = function (props: Props) {
       : undefined
 
     return (
-      <Link to={`/effect/${p}`}>
+      <Link key={`material-list-item-effect-${p}`} to={`/effect/${p}`}>
         <EffectItem
-          key={`material-list-item-effect-${p}`}
           label={label ? label.name : 'undefined'}
           className="h-full leading-4 text-xs lg:text-sm"
           matchedEffectId={matchedEffectId}
