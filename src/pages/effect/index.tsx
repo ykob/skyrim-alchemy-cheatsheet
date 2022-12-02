@@ -1,7 +1,6 @@
 import { useParams } from 'react-router-dom'
 import {
   effects as dataEffects,
-  effects,
   materials as dataMaterials,
 } from '../../data'
 import { EffectContent, MaterialList } from '../../components/features'
