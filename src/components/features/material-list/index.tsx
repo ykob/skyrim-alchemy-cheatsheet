@@ -3,6 +3,7 @@ import { MaterialListItem } from './MaterialListItem'
 
 type Props = {
   materials: Material[]
+  overlapEffectIds?: number[]
   parentEffectIds?: number[]
 }
 
@@ -17,6 +18,7 @@ export const MaterialList = function (props: Props) {
         itemId={id}
         effectIds={effectIds}
         categoryId={category}
+        overlapEffectIds={props.overlapEffectIds}
         parentEffectIds={props.parentEffectIds}
       />
     )
