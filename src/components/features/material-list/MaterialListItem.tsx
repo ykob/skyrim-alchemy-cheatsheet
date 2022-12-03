@@ -8,7 +8,6 @@ type Props = {
   effectIds: number[]
   itemId: number
   label: string
-  overlapEffectIds?: number[]
   parentEffectIds?: number[]
 }
 

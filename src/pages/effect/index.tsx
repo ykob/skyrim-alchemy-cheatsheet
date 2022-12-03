@@ -19,17 +19,6 @@ export const PageEffect = function () {
   const materials = dataMaterials.filter((o) => {
     return o.effectIds.indexOf(data.id) >= 0
   })
-  const allEffects = materials.map((o) => o.effectIds).flat()
-  const effectCounts: { [key: string]: number } = {}
-
-  for (var i = 0; i < allEffects.length; i++) {
-    const id = allEffects[i]
-    effectCounts[id] = (effectCounts[id] || 0) + 1
-  }
-
-  const overlapEffectIds = Object.entries(effectCounts)
-    .filter((o) => o[1] > 1)
-    .map((o) => parseInt(o[0]))
 
   return (
     <>
@@ -37,7 +26,7 @@ export const PageEffect = function () {
       <div className="px-4 lg:px-8">
         <MaterialList
           materials={materials}
-          overlapEffectIds={overlapEffectIds}
+          parentEffectIds={[data.id]}
         />
       </div>
     </>
