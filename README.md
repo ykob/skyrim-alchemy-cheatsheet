@@ -1,6 +1,7 @@
 # Skyrim Alchemy Cheatsheet
 
-The Elder Scrolls V: Skyrim® の錬金術に使用する素材と効果の一覧表です。
+The Elder Scrolls V: Skyrim® の錬金術に使用する素材と効果の一覧表です。  
+https://ykob.github.io/skyrim-alchemy-cheatsheet/
 
 ## 技術構成
 
