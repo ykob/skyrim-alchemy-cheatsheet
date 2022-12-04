@@ -1,11 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { createHashRouter, RouterProvider } from 'react-router-dom'
 import App from './App'
 import { PageEffect, PageHome, PageMaterial } from './pages/'
 import './index.css'
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     element: <App />,
     path: '/',
