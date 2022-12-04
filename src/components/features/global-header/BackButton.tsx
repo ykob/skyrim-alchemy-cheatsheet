@@ -1,5 +1,5 @@
 import { Link, useLocation } from 'react-router-dom'
-import Icon from '@mdi/react'
+import { Icon } from '@mdi/react'
 import { mdiHome } from '@mdi/js'
 import { BoxButton } from '../../ui-parts'
 
